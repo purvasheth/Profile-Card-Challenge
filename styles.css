@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: hsl(185, 75%, 39%);
+    --desaturated-blue: hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+}
+
+body {
+    margin: 0;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    height: 720px;
+    width: 1440px;
+    position: relative;
+}
+
+.image-top {
+    width:
+        700px;
+    height: 500px;
+    background-position: bottom 0 right 0;
+    background-repeat: no-repeat;
+    background-image: url('images/bg-pattern-top.svg');
+}
+
+.image-bottom {
+
+    width:
+        750px;
+    height: 400px;
+    background-position: top 0 left 0;
+    background-repeat: no-repeat;
+    background-image: url('images/bg-pattern-bottom.svg');
+    align-self: flex-end;
+}
+
+.card {
+    margin: auto;
+    height: 330px;
+    width: 300px;
+    background: white;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.card-top {
+    width: 300px;
+    height: 35%;
+    background-image: url('images/bg-pattern-card.svg');
+    border-radius: 15px 15px 0 0;
+}
+
+.card-middle {
+    width: 300px;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-bottom {
+    width: 300px;
+    height: 25%;
+    border-top: 1px solid lightgray;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-bottom-text {
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.card-bottom-small {
+    font-weight: 400;
+    font-size: 0.65rem;
+    padding: 5px;
+    color: gray;
+}
+
+.heading {
+    font-weight: 700;
+    text-align: center;
+    transform: translate(0, 20px);
+}
+
+.sub-heading {
+    font-weight: 400;
+    font-size: 0.7rem;
+    padding: 5px;
+    color: gray;
+}
+
+span {
+    color: gray;
+}
+
+img {
+    border-radius: 50%;
+    height: 75px;
+    position: absolute;
+    border: 5px solid white;
+    transform: translate(0, 85%);
+}
